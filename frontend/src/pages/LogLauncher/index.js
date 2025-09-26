@@ -115,7 +115,7 @@ const VersionLog = () => {
     const fetchReadme = async () => {
       try {
         const response = await axios.get(
-          'https://api.github.com/repos/launcherbr/attwhaticket/contents/README.md'
+          'https://api.github.com/repos/packtypebot/logs/contents/README.md'
         );
         const decodedContent = decodeBase64(response.data.content);
         const parsedLog = parseVersionLog(decodedContent);
